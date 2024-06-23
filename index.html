@@ -9,14 +9,13 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css">
 
-  <link rel="stylesheet" type="text/css" href="./style.css" /> <!-- Link for Github-->
-        <!-- <link rel="stylesheet" href="CSS/style.css">   Link for local file --> 
+ <link rel="stylesheet" type="text/css" href="./style.css" />    <!--  Link for Github-->
+     <!-- <link rel="stylesheet" href="CSS/style.css">   Link for local file --> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
 
 </head>
-
 
 <body>
 
@@ -178,16 +177,14 @@
         <form action="code.php" method="post" class="needs-validation" novalidate>
           <div class="mb-3">
             <label class="form-label" for="userName">Name</label>
-            <input class="form-control form-control-lg" type="text" id="userName" name="userName" required pattern="[a-zA-Z ]+" minlength="3" placeholder="Full Name">
-
+            <input class="form-control" type="text" id="userName" name="userName" required pattern="[a-zA-Z ]+" minlength="3" placeholder="Full Name">
             <div class="valid-feedback">Valid Name</div>
             <div class="invalid-feedback">Please enter a valid name.</div>
           </div>
 
           <div class="mb-3">
             <label class="form-label" for="userEmail">Email address</label>
-            <input type="email" class="form-control form-control-sm" id="userEmail" name="userEmail" required placeholder="name@example.com">
-
+            <input type="email" class="form-control" id="userEmail" name="userEmail" required placeholder="name@example.com">
             <div class="valid-feedback">Valid email</div>
             <div class="invalid-feedback">Please enter a valid email.</div>
           </div>
@@ -195,14 +192,13 @@
           <div class="mb-3">
             <label class="form-label" for="userAge">Age</label>
             <input type="number" class="form-control" id="userAge" name="userAge" required min="13" max="110" >
-
             <div class="valid-feedback">Valid Age</div>
             <div class="invalid-feedback">Please enter a valid age (Only valid for users 13+) </div>
           </div>
 
           <div class="mb-3">
             <label class="form-label" for="userGender">Gender</label>
-            <select class="form-select form-select-sm" id="userGender" name="userGender" required>
+            <select class="form-select" id="userGender" name="userGender" required>
               <option value="">Select Gender</option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -260,6 +256,22 @@
       'maxWidth': 1600,    
       'maxHeight': 900 
     })
+</script>
+
+<script>
+(() => {
+    'use strict'
+    const forms = document.querySelectorAll('.needs-validation')
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation() }
+        form.classList.add('was-validated')
+      }, false)
+    })
+  })()
+
 </script>
 
 
