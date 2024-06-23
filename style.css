@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@300..700&family=Oleo+Script:wght@400;700&display=swap');
+
+
+:root { 
+  --main-color: #E5DAC4;
+  --second-color: #675538;
+  --third-color: #6B9A73;
+  --fourth-color: #95C0D7;
+  --fifth-color:#E94F09;
+}
+
+body {background-color: var(--main-color);}
+
+
+/* navbar */
+  .navbar {
+  background-color: var(--fourth-color); }
+
+  .navbar .navbar-nav .nav-link {
+  color: var(--second-color); }
+
+  .navbar .navbar-nav .nav-link:hover {
+  color: var(--third-color);}
+
+  .navbar-brand { font-family: "Oleo Script";
+  color: var(--second-color);
+  font-size: 2.6em;
+  margin-left: 0.5em;}
+
+  .navbar-toggler {margin-right: 0.5em;}
+
+  .nav-link {font-family: "Alata";
+    font-size: 1.3em;}
+
+  .navbar-brand:hover {color:var(--fifth-color);}  
+
+  
+/* carousel */
+
+  .carousel-item {
+    height: 500px;}
+  
+   .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%; } 
+  
+  h1 {
+    font-size: 3rem;
+    font-family: "Oleo Script";
+    color: var(--main-color);
+    text-shadow: 2px 2px 4px #E52D0D;
+    
+  } 
+
+  .shadep{
+    font-size: 1.3rem;
+    font-family: "Comfortaa";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white;
+  } 
+  
+/* features */
+
+.loc{text-shadow: 1px 1px 3px var(--fifth-color);}
+
+.cul {text-shadow: 1px 1px 3px #355848;}
+
+.shop{text-shadow: 1px 1px 3px #04999C;}
+
+h3 {font-family: "Oleo Script";
+color: #5f360a;
+}
+
+p {color: var(--second-color);
+font-family: "Comfortaa";}
+
+a {font-family: "Comfortaa";
+color: var(--third-color); 
+}
+
+/* lightbox */
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;}
+
+
+.container-xl {margin-bottom: 30px;}
+
+
+
+/* footer */
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: calc (1rem+2vw);
+  }
+}
+
+/* button */
+
+.newsletter {
+  font-family: "Alata";
+  color: var(--second-color);
+  background-color: var(--fourth-color);
+  border-radius: 15px;
+  border-color: var(--fifth-color);
+  border-width: 3px;
+}
+
+.newsletter:hover {
+  color: var(--main-color);
+  background-color: var(--fifth-color);
+  border-radius: 15px;
+  border-color: var(--fourth-color);
+  border-width: 3px;
+}
+
+/* modal */
+
+.modal-content {background-color: var(--main-color);}
+
+.modal-header {background-color: var(--fourth-color);}
+.modal-footer {background-color: var(--fourth-color);}
+
+.modal-title {font-family: "Oleo Script";
+color: var(--fifth-color);
+font-size: 1.8rem;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.ModalDescription {color: var(--second-color);
+font-family: "Comfortaa";
+font-size: 1rem;}
+
+.form-label {color: var(--fifth-color);
+font-family: "Comfortaa";
+font-size: 1rem;
+}
+.valid-feedback {
+  font-family: "Alata";
+}
+.invalid-feedback {
+  font-family: "Alata";
+}
+
+.form-control {
+  font-family: "Alata";
+  color: var(--second-color);
+}
+
+.form-select {
+  font-family: "Alata";
+  color: var(--second-color);
+}
+
+.btn { font-family: "Comfortaa";
+background-color: var(--third-color);
+border-width: 0px;}
+
+.btn:hover { font-family: "Comfortaa";
+  background-color: var(--fifth-color);
+  border-width: 0px;}
+
+/* misc */
+
+a:hover {color:var(--fifth-color);}
